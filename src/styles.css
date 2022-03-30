@@ -9,3 +9,10 @@ body {
   min-height: 100vh;
   min-width: 250px;
 }
+
+.scrollable {
+  max-height: 78vh;
+  width: calc(100% + 20px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
