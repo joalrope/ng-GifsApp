@@ -48,8 +48,6 @@ export class GifsService {
         .set('limit', this.limit)
         .set('q', query);
 
-      console.log(params.toString());
-
       this.http
         .get<SearchGifsResponse>(`${this.urlBase}/search`, { params })
         .subscribe((resp) => {
